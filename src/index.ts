@@ -5,7 +5,7 @@ import express from "express";
 config();
 
 const app = express();
-
+console.log("Hola Mundo");
 app.listen(process.env.SERVER_PORT, function () {
   console.log("Escuchando puerto " + process.env.SERVER_PORT);
 });
