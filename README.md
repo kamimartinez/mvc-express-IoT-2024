@@ -32,7 +32,7 @@ Ideal para desarrolladores que buscan una base sólida y bien estructurada para 
 
 ## 👨‍💻 Autores
 
-- **Juan Ma** - _Desarrollador Principal_ - [GitHub](https://github.com/juanma)
+- **Kami Martinez** - _Desarrollador Principal_ - [GitHub](https://github.com/kamimartinez)
 - **Equipo de Desarrollo** - _Contribuidores_
 
 ## 📂 Estructura del Proyecto
