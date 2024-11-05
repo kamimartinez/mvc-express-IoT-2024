@@ -6,10 +6,9 @@ import testRoutes from "./routes/test";
 import unknownError from "./middlewares/unknown-error";
 import validationError from "./middlewares/validation-error";
 
-dotenvFlow.config();
-/* if (process.env.NODE_ENV !== "production") {
-  
-} */
+if (process.env.NODE_ENV !== "production") {
+  dotenvFlow.config();
+}
 
 //Para poder acceder a las variables del ambiente(.env)
 
