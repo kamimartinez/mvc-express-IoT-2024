@@ -63,6 +63,6 @@ export const updateProfessor = async (
 };
 
 export const deleteProfessor = async (id: number): Promise<number> => {
-  await pool.query<ResultSetHeader>("DELETE FROM students WHERE id = ?", [id]);
+  await pool.query<ResultSetHeader>("DELETE FROM teachers WHERE id = ?", [id]);
   return id;
 };

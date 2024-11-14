@@ -2,6 +2,7 @@ import dotenvFlow from "dotenv-flow";
 import express from "express";
 import studentRouter from "./routes/student";
 import professorRouter from "./routes/professor";
+import courseRouter from "./routes/course";
 import testRoutes from "./routes/test";
 import unknownResource from "./middlewares/unknown-resource";
 import unknownError from "./middlewares/unknown-error";
@@ -31,8 +32,9 @@ app.use(cors());
 app.use(express.json());
 
 // Rutas de la api
-app.use("/api/v1/students", studentRouter); // Cambié student por students para consistencia
+app.use("/api/v1/students", studentRouter);
 app.use("/api/v1/professor", professorRouter); // Nueva ruta para profesores
+app.use("/api/v1/course", courseRouter);
 
 // Rutas de prueba
 app.use("/error", testRoutes);

@@ -13,7 +13,7 @@ export const getProfessors = async (req: Request, res: Response) => {
     const professor = await findAll(limit, offset);
     res.status(200).json(professor);
   } catch (error) {
-    res.status(400).json({ message: "Error al obtener alumnos", error });
+    res.status(400).json({ message: "Error al obtener profesores", error });
   }
 };
 
