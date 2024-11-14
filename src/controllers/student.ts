@@ -20,7 +20,10 @@ export const getStudents = async (req: Request, res: Response) => {
 export const createStudent = async (req: Request, res: Response) => {
   try {
     const student: Student = req.body;
-    await insert(student);
+    const newStudent = await insert(student);
+
+    const io = req.app.get("io");
+    io.emit("newStudent", newStudent);
     res.status(201).json({ message: "Alumno creado exitosamente" });
   } catch (error) {
     res.status(400).json({ message: "Error al crear alumno", error });
